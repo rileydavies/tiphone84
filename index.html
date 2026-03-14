@@ -43,8 +43,8 @@ function fitToScreen() {
   const h = window.innerHeight;
 
   // Increase these values if the content is still hitting the Island or the Bar
-  const topInset = 100;    // Space for Dynamic Island
-  const bottomInset = 10; // Space for Home Bar
+  const topInset = 110;    // Space for Dynamic Island
+  const bottomInset = 0; // Space for Home Bar
   const safeH = h - topInset - bottomInset;
 
   scaler.style.transition = 'none';
@@ -59,7 +59,7 @@ function fitToScreen() {
     // We want it to be wide, but if we use scaleX = w/rect.width, 
     // it might look too stretched. Let's use a uniform scale that fits height,
     // then boost it slightly for width.
-    const finalScale = scaleY * 1.1; // 1.05 gives it a tiny "bleed" without being too tall
+    const finalScale = scaleY * 1.05; // 1.05 gives it a tiny "bleed" without being too tall
 
     scaler.style.transition = 'transform 0.3s ease-out, opacity 0.3s ease-in';
 
