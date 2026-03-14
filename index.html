@@ -38,19 +38,42 @@
         },
       });
 
-      function fitToScreen() {
-        const w = window.innerWidth;
-        const h = window.innerHeight;
-        scaler.style.transition = 'none';
-        scaler.style.transform = 'scale(1)';
-        const rect = calc_div.getBoundingClientRect();
-        if (rect.width > 0 && rect.height > 0) {
-          const baseScale = Math.min(w / rect.width, h / rect.height);
-          scaler.style.transition = 'transform 0.3s ease-out, opacity 0.3s ease-in';
-          scaler.style.transform = `scale(${baseScale * 1.15})`;
-          scaler.style.opacity = '1';
-        }
-      }
+function fitToScreen() {
+  const w = window.innerWidth;
+  const h = window.innerHeight;
+  
+  // We need to account for the "Safe Area" on iPhones
+  // (The Dynamic Island and the bottom home bar)
+  const topPadding = 44;    // Approximate height for Dynamic Island
+  const bottomPadding = 34; // Approximate height for Home Indicator
+  const availableHeight = h - topPadding - bottomPadding;
+
+  scaler.style.transition = 'none';
+  scaler.style.transform = 'scale(1)';
+  
+  const rect = calc_div.getBoundingClientRect();
+  
+  if (rect.width > 0 && rect.height > 0) {
+    // 1. Calculate the scale needed to hit the side edges perfectly
+    const scaleX = w / rect.width;
+    
+    // 2. Calculate a scale that fits within the vertical "safe" area
+    const scaleY = availableHeight / rect.height;
+
+    // 3. Apply non-uniform scaling
+    // We keep the width (scaleX) but use a slightly smaller height (scaleY)
+    // This "squishes" the calculator vertically to fit.
+    scaler.style.transition = 'transform 0.3s ease-out, opacity 0.3s ease-in';
+    
+    // Adjust scaleY slightly if it looks too 'flat', but this prevents the cutoff
+    scaler.style.transform = `scale(${scaleX}, ${scaleY})`;
+    
+    // Shift the calculator down slightly so it's not under the Dynamic Island
+    scaler.style.marginTop = `${topPadding}px`;
+    
+    scaler.style.opacity = '1';
+  }
+}
 
       window.ti84 = new TI84PCE({
         ROMLocation: document.getElementById("h84statej").getAttribute("data-url") + "#.h84statej", 
