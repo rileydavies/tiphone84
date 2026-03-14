@@ -59,7 +59,7 @@ function fitToScreen() {
     // We want it to be wide, but if we use scaleX = w/rect.width, 
     // it might look too stretched. Let's use a uniform scale that fits height,
     // then boost it slightly for width.
-    const finalScale = scaleY * 1.25; // 1.05 gives it a tiny "bleed" without being too tall
+    const finalScale = scaleY * 1.1; // 1.05 gives it a tiny "bleed" without being too tall
 
     scaler.style.transition = 'transform 0.3s ease-out, opacity 0.3s ease-in';
 
