@@ -1,90 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="utf-8" />
     <title>TI-84 Plus CE</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no, viewport-fit=cover">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="manifest" href="manifest.json">
-    <link rel="stylesheet" type="text/css" href="https://mn.testnav.com/client/public/stylesheets/tn.css"/>
+    
+    <!-- Mobile Viewport & Fullscreen Standalone App Configuration -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="TI-84 CE" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="format-detection" content="telephone=no" />
 
-    <style>
-      * { touch-action: none; -webkit-tap-highlight-color: transparent; user-select: none; }
-      html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background-color: #000 !important; display: flex; justify-content: center; align-items: center; }
-      #scaler { display: flex; justify-content: center; align-items: center; transform-origin: center center; transition: transform 0.3s ease-out; opacity: 0; }
-      #calculatorDiv, .calculatorDiv, .ti-calculator { background: #000 !important; outline: none !important; }
-    </style>
+    <!-- Web App Manifest & App Icons -->
+    <link rel="manifest" href="manifest.json?v=11.0" />
+    <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png?v=11.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icon-180.png?v=11.0" />
 
-    <script src="https://mn.testnav.com/client/texasinstruments/js/ELG-min.js"></script>
-    <script id="h84statej" type="application/json" data-url="https://mn.testnav.com/client/texasinstruments/bin/No_AppsCE.h84statej"></script>
-    <script id="ti84faceplate" type="application/json" data-url="https://mn.testnav.com/client/texasinstruments/images/TI84CE_touch.svg"></script>
+    <!-- TI-84 Emulator Engine & Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/tn.css" />
+    <link rel="stylesheet" type="text/css" href="assets/app.css?v=11.0" />
+
+    <!-- Persistent RAM State Interceptor -->
+    <script>
+      (function() {
+        const origOpen = XMLHttpRequest.prototype.open;
+        const origSend = XMLHttpRequest.prototype.send;
+
+        XMLHttpRequest.prototype.open = function(method, url, ...rest) {
+          this._reqUrl = url;
+          return origOpen.call(this, method, url, ...rest);
+        };
+
+        XMLHttpRequest.prototype.send = function(...args) {
+          if (this._reqUrl && typeof this._reqUrl === 'string' && this._reqUrl.indexOf('.h84statej') !== -1) {
+            try {
+              const saved = localStorage.getItem('ti84_saved_ram');
+              if (saved && saved.length > 50000) {
+                console.log('[TI-84] Booting with saved RAM state (' + (saved.length / 1024).toFixed(0) + ' KB)');
+                Object.defineProperty(this, 'status', { value: 200, writable: true, configurable: true });
+                Object.defineProperty(this, 'responseText', { value: saved, writable: true, configurable: true });
+                Object.defineProperty(this, 'readyState', { value: 4, writable: true, configurable: true });
+                setTimeout(() => {
+                  if (typeof this.onload === 'function') this.onload();
+                }, 0);
+                return;
+              }
+            } catch (e) {
+              console.warn('[TI-84] Could not read saved RAM from storage:', e);
+            }
+          }
+          return origSend.apply(this, args);
+        };
+      })();
+    </script>
+
+    <script src="assets/ELG-min.js"></script>
   </head>
   <body>
-    <div id="scaler"><div id="calculatorDiv"></div></div>
+    <!-- Pure Calculator Viewport -->
+    <div id="scaler">
+      <div id="calculatorDiv"></div>
+    </div>
 
-    <script>
-      // Service Worker Registration
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('sw.js');
-      }
-
-      const calc_div = document.getElementById("calculatorDiv");
-      const scaler = document.getElementById("scaler");
-
-      XMLHttpRequest.prototype.open = new Proxy(XMLHttpRequest.prototype.open, {
-        apply: function (target, thisArg, args) {
-          if (typeof args[1] === "string") args[1] = args[1].replace(/#.*$/, "");
-          Reflect.apply(target, thisArg, args);
-        },
-      });
-
-function fitToScreen() {
-  const w = window.innerWidth;
-  const h = window.innerHeight;
-
-  // Adjust these to create your "Safe Zone"
-  const topInset = 50;    // Pushes screen below Dynamic Island
-  const bottomInset = 0;  // Keeps buttons above Home Bar
-  const safeH = h - topInset - bottomInset;
-
-  // Reset for measurement
-  scaler.style.transition = 'none';
-  scaler.style.transform = 'scale(1)';
-
-  const rect = calc_div.getBoundingClientRect();
-
-  if (rect.width > 0 && rect.height > 0) {
-    // 1. Calculate the 'Fatness' (Width Scale)
-    // We use a 1.02 multiplier to ensure it bleeds slightly off the sides
-    const scaleX = (w / rect.width) * 1.02;
-
-    // 2. Calculate the 'Shortness' (Height Scale)
-    // This forces the calculator to fit between your Insets
-    const scaleY = safeH / rect.height;
-
-    scaler.style.transition = 'transform 0.3s ease-out, opacity 0.3s ease-in';
-
-    // 3. APPLY NON-UNIFORM SCALE: scale(Width, Height)
-    // This forces the calculator into your phone's aspect ratio
-    scaler.style.transform = `scale(${scaleX}, ${scaleY})`;
-
-    // 4. Position it
-    // We use translateY to nudge it perfectly into the safe area
-    const offset = (topInset - bottomInset) / 2;
-    scaler.style.transform += ` translateY(${offset}px)`;
-
-    scaler.style.opacity = '1';
-  }
-}
-
-      window.ti84 = new TI84PCE({
-        ROMLocation: document.getElementById("h84statej").getAttribute("data-url") + "#.h84statej", 
-        FaceplateLocation: document.getElementById("ti84faceplate").getAttribute("data-url") + "#.svg"
-      });
-
-      const observer = new ResizeObserver(() => { requestAnimationFrame(fitToScreen); });
-      observer.observe(calc_div);
-      window.addEventListener('resize', fitToScreen);
-    </script>
+    <!-- App Logic with Version Busting -->
+    <script src="assets/app.js?v=11.0"></script>
   </body>
 </html>

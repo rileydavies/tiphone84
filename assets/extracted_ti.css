@@ -1,0 +1,298 @@
+.ui-draggable,.ui-sortable,.ui-droppable,.ee-parent-panel,.ee-body-panel,.ee-button,.ee-side-bar,.ee-child-panel,.accordion-group,.ee-head-panel,.ee-quick-bar,.accordion-inner,.highlightColor,.cloze-inline,.cloze-block,.int-fracmodel-div,.selectable,.int-ext-selectable,.int-ext-selected,.int-ext-dropBayTextContainer,.label-important,.dropdown-toggle,.dropdown-menu,.jwplayer,.jwcontrols,.jwcontrolbar,.jwpreview,.jwdisplayIcon,.jwcaptions,.jwicon,.tooltip,.tooltip-inner,.functionGraphBtnText,.functionGraphPanel,.qtip,.shadow-popup,.modal,.hide,.loading,.modal-header,.modal-body,.modal-footer,.tn8-draggable-modal,.tn8-draggable-modal-header,.rich-text-edtior,.rte-editbox,.rte-toolbar,.contrast-sample,.contrast-settings-ul,.nav-tabs,.tabbed-passages,.int-pp-passageControls,.int-pp-passageCounter,.selectpicker,.tn8-sidebar,.highcharts-container,.mce-container-body,.label,.no-magnifier,.int-extended-text-counter,.textCounter,.visuallyhidden,.navbar-fixed-top,.int-ordering,.clearfix,.probabilitySpinnerInteraction,.int-cg-main-panel,.activityPanel,.mainContainer2,.tn8-recorder,.tn8-recorder *,.pull-right,.sourcechoices,.tei-complexslider,.targetchoices,.acc-anseliminator-canvas,img,svg,option,select,button,#divCalculator,#divCalculator *,#calculatorDiv,#calculatorDiv *,canvas{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-ms-user-select:none;user-select:none;-moz-user-select:-moz-none}
+body.surface.ie .highcharts-container,body.surface.ie .highcharts-container *,body.surface.ie .highcharts-container sag,body.surface.ie #main_panel .measureTool,body.surface.ie #main_panel .measureTool *,body.surface.ie #calculatorContent,body.surface.ie #calculatorContent *,body.surface.ie .calculatorDiv,body.surface.ie .calculatorDiv *,body.surface.ie .calculatorDiv displayDiv display,body.surface.ie .ui-draggable,body.surface.ie .ui-droppable,body.surface.ie .gap-hotspot [data-module=OrderInteraction],body.surface.ie [data-module=OrderInteraction] *,body.surface.ie [data-module=GraphicGapMatchInteraction],body.surface.ie [data-module=CustomInteraction-complexslider],body.surface.ie svg{-ms-touch-action:none}
+body.surface.edge .highcharts-container,body.surface.edge .highcharts-container *,body.surface.edge .highcharts-container sag,body.surface.edge #main_panel .measureTool,body.surface.edge #main_panel .measureTool *,body.surface.edge #calculatorContent,body.surface.edge #calculatorContent *,body.surface.edge .calculatorDiv,body.surface.edge .calculatorDiv *,body.surface.edge .calculatorDiv displayDiv display,body.surface.edge .ui-draggable,body.surface.edge .ui-droppable,body.surface.edge .gap-hotspot [data-module=OrderInteraction],body.surface.edge [data-module=OrderInteraction] *,body.surface.edge [data-module=GraphicGapMatchInteraction],body.surface.edge [data-module=CustomInteraction-complexslider],body.surface.edge svg{touch-action:none}
+div.calculatorDiv{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-moz-user-select:-moz-none;-ms-user-select:none;-ms-touch-action:none;-ms-content-zooming:none;-ms-content-zoom-limit-max:100%;-ms-content-zoom-limit-min:100%;-ms-content-zoom-chaining:none;top:0;left:0;position:relative;float:left;z-index:1000}
+div.displayDiv{background-color:rgba(0,0,0,0)}
+div.calculatorDiv div.displayDiv{float:left;position:relative;z-index:20}
+div.displayDiv canvas{position:relative;width:100%;height:100%;z-index:20}
+div.calculatorDiv svg{float:left;position:absolute;left:0;top:0;height:100%;width:100%;z-index:0}
+div.calculatorDiv:focus{outline:solid 2px #44c8f5}
+div.displayDiv:focus{outline:solid 3px #3180cb}
+.TI108 .ti_logo{fill:#f1f1f2}
+.TI108 .ti_calc_logo{fill:#fff}
+.TI108 .ti_lcd_background{fill:#fff}
+.TI108 .ti_redKey_art_primary{fill:#f2f2f2}
+.TI108 .ti_redKey{fill:#ea2437}
+.TI108 .ti_numpadKey_art_primary{fill:#244560}
+.TI108 .ti_numpadKey{fill:#f2f2f2}
+.TI108 .ti_key_background_padding{opacity:0;fill:#305a84}
+.TI108 .ti_calc_case{fill:#305a84}
+.TI108.ti_theme_light .ti_logo{fill:#666}
+.TI108.ti_theme_light .ti_calc_logo{fill:#244560}
+.TI108.ti_theme_light .ti_lcd_background{fill:#fff}
+.TI108.ti_theme_light .ti_redKey_art_primary{fill:#f2f2f2}
+.TI108.ti_theme_light .ti_redKey{fill:#ea2437}
+.TI108.ti_theme_light .ti_numpadKey_art_primary{fill:#244560}
+.TI108.ti_theme_light .ti_numpadKey{fill:#f2f2f2;stroke:#244560;stroke-miterlimit:10}
+.TI108.ti_theme_light .ti_key_background_padding{opacity:0;fill:#305a84}
+.TI108.ti_theme_light .ti_calc_case{fill:#fff;stroke:#244560;stroke-width:2;stroke-miterlimit:10}
+div.displayDiv canvas.ti_theme_light,div.displayDiv canvas.ti_theme_outline{border:1px solid #666;width:calc(100% - 2px);height:calc(100% - 2px)}
+.TI108.ti_theme_outline .ti_logo{fill:#666}
+.TI108.ti_theme_outline .ti_calc_logo{fill:#000}
+.TI108.ti_theme_outline .ti_lcd_background{fill:#fff}
+.TI108.ti_theme_outline .ti_redKey_art_primary{fill:#000}
+.TI108.ti_theme_outline .ti_redKey{fill:#fff;stroke:#333;stroke-miterlimit:10}
+.TI108.ti_theme_outline .ti_numpadKey_art_primary{fill:#000}
+.TI108.ti_theme_outline .ti_numpadKey{fill:#fff;stroke:#333;stroke-miterlimit:10}
+.TI108.ti_theme_outline .ti_key_background_padding{opacity:0;fill:#305a84}
+.TI108.ti_theme_outline .ti_calc_case{fill:#fff;stroke:#000;stroke-width:2;stroke-miterlimit:10}
+.TI108 .ti_highlight_keys .ti_redKey,.TI108 .ti_highlight_keys .ti_numpadKey{fill:#00beea}
+.TI108 .ti_highlight_keys .ti_redKey_art_primary,.TI108 .ti_highlight_keys .ti_numpadKey_art_primary{fill:#000}
+.TI108 .ti_disabled_keys .ti_redKey,.TI108 .ti_disabled_keys .ti_numpadKey{opacity:.5}
+.TI108 .ti_disabled_keys .ti_redKey_art_primary,.TI108 .ti_disabled_keys .ti_numpadKey_art_primary{opacity:.25}
+.TI108 .ti_focused_keys .ti_numpadKey,.TI108 .ti_focused_keys .ti_redKey{stroke:#44c8f5;stroke-width:2px}
+.TI108 .ti_focused_keys,.TI108 [id^=TI108_KEY_]{outline:0}
+.TI108.ti_layout_toggle_TI108 .ti_redKey,.TI108.ti_layout_toggle_TI108 .ti_redKey_art_primary,.TI108.ti_layout_toggle_TI108 .ti_numpadKey_art_primary,.TI108.ti_layout_toggle_TI108 .ti_numpadKey,.TI108.ti_layout_toggle_TI108 .ti_key_background_padding{display:none}
+.TI108.ti_layout_toggle_TI108 .TI108_CALC_CASE{display:none}
+div.calculatorDiv.ti_layout_toggle_TI108{background-color:#305a84;border-radius:.5em}
+div.calculatorDiv.ti_layout_toggle_TI108.ti_theme_light,div.calculatorDiv.ti_layout_toggle_TI108.ti_theme_outline{background-color:#fff;border:solid .1em #000}
+.ti_ec_icon_toggle_keypad{height:3em;width:3em;position:absolute;bottom:-3em;left:calc(50% - 1.5em - 1px);transform:translateX(-50%);cursor:pointer;border:0;background-color:#e2e2e2;text-align:center;padding:0}
+div.calculatorDiv .ti_ec_icon_toggle_keypad svg{width:2.5em;height:2.5em;position:relative}
+.ti_ec_icon_toggle_keypad:active svg path{fill:#9b9b9b;stroke:none}
+.ti_ec_hide_keypad_icon{display:inline-block}
+.ti_layout_toggle_TI108 .ti_ec_hide_keypad_icon{display:none}
+.ti_ec_show_keypad_icon{display:none}
+.ti_layout_toggle_TI108 .ti_ec_show_keypad_icon{display:inline-block}
+.ti_ec_reset_button{height:3em;width:5.5em;color:#666;text-align:right;position:absolute;bottom:-3em;right:calc(50% - 3em - 1px);transform:translateX(50%);cursor:pointer;border:0;background:#e2e2e2;display:inline-block}
+.ti_ec_reset_button span{font-size:.9em}
+.ti_ec_reset_button:active{color:#9b9b9b}
+.ti_ec_reset_button:active svg.ti_ec_reset_icon *{fill:#9b9b9b}
+.ti_ec_reset_button.confirm{color:#555;text-align:center;background:#f08080}
+.ti_ec_reset_button.confirm:active{color:#fff}
+.ti_ec_reset_button.confirm svg.ti_ec_reset_icon{display:none}
+.ti_ec_reset_button svg.ti_ec_reset_icon{width:2.5em;height:2.5em;top:50%;left:.25em;transform:translateY(-50%)}
+.ti_ec_reset_button.ti_ec_ui_show{display:inline-block}
+.ti_ec_reset_button.ti_ec_ui_hide{display:none}
+div.calculatorDiv:focus{outline:solid 2px #ff1229}
+div.displayDiv:focus{outline:solid 3px #3180cb}
+.TI30XS .ti_logo{fill:#f2f2f2}
+.TI30XS .ti_calc_logo{fill:#f2f2f2}
+.TI30XS .ti_lcd_background{fill:#fff}
+.TI30XS .ti_secondKey_art_primary{fill:#414344}
+.TI30XS .ti_secondKey{fill:#aacc7a;stroke:#aacc7a}
+.TI30XS .ti_generalKey_art_primary{fill:#fff}
+.TI30XS .ti_generalKey_art_second{fill:#dbf78d}
+.TI30XS .ti_generalKey{fill:#546168;stroke:#9da5aa;stroke-miterlimit:10}
+.TI30XS .ti_numpadKey_art_primary{fill:#3b3c3d}
+.TI30XS .ti_numpadKey_art_second{fill:#628107}
+.TI30XS .ti_numpadKey{fill:#fff;stroke:#fff}
+.TI30XS .ti_arrowKey_art_primary{fill:#fff}
+.TI30XS .ti_arrowKey_art_second{fill:#666}
+.TI30XS .ti_arrowKey{fill:#32373d;stroke:#9da5aa;stroke-miterlimit:10}
+.TI30XS .ti_fourFunctionKey_art_primary{fill:#fff}
+.TI30XS .ti_fourFunctionKey_art_second{fill:#dbf78d}
+.TI30XS .ti_fourFunctionKey{fill:#32373d;stroke:#9da5aa;stroke-miterlimit:10}
+.TI30XS .ti_key_background_padding{opacity:0;fill:#434e54}
+.TI30XS .ti_calc_case{fill:#434e54}
+.TI30XS.ti_theme_light .ti_logo{fill:#546168}
+.TI30XS.ti_theme_light .ti_calc_logo{fill:#32373d}
+.TI30XS.ti_theme_light .ti_lcd_background{fill:#fff}
+.TI30XS.ti_theme_light .ti_secondKey_art_primary{fill:#414344}
+.TI30XS.ti_theme_light .ti_secondKey{fill:#aacc7a;stroke:#333;stroke-miterlimit:10}
+.TI30XS.ti_theme_light .ti_generalKey_art_primary{fill:#fff}
+.TI30XS.ti_theme_light .ti_generalKey_art_second{fill:#dbf78d}
+.TI30XS.ti_theme_light .ti_generalKey{fill:#546168;stroke:#546168}
+.TI30XS.ti_theme_light .ti_numpadKey_art_primary{fill:#3b3c3d}
+.TI30XS.ti_theme_light .ti_numpadKey_art_second{fill:#628107}
+.TI30XS.ti_theme_light .ti_numpadKey{fill:#fff;stroke:#333;stroke-miterlimit:10}
+.TI30XS.ti_theme_light .ti_arrowKey_art_primary{fill:#fff}
+.TI30XS.ti_theme_light .ti_arrowKey_art_second{fill:#666}
+.TI30XS.ti_theme_light .ti_arrowKey{fill:#32373d;stroke:#32373d}
+.TI30XS.ti_theme_light .ti_fourFunctionKey_art_primary{fill:#fff}
+.TI30XS.ti_theme_light .ti_fourFunctionKey_art_second{fill:#dbf78d}
+.TI30XS.ti_theme_light .ti_fourFunctionKey{fill:#32373d;stroke:#32373d}
+.TI30XS.ti_theme_light .ti_key_background_padding{opacity:0;fill:#434e54}
+.TI30XS.ti_theme_light .ti_calc_case{fill:#fff;stroke:#000;stroke-width:2;stroke-miterlimit:10}
+div.displayDiv canvas.ti_theme_light,div.displayDiv canvas.ti_theme_outline{border:1px solid #666;width:calc(100% - 2px);height:calc(100% - 2px)}
+.TI30XS.ti_theme_outline .ti_logo{fill:#666}
+.TI30XS.ti_theme_outline .ti_calc_logo{fill:#000}
+.TI30XS.ti_theme_outline .ti_lcd_background{fill:#fff}
+.TI30XS.ti_theme_outline .ti_secondKey_art_primary{fill:#000}
+.TI30XS.ti_theme_outline .ti_secondKey{fill:#fff;stroke:#333;stroke-miterlimit:10}
+.TI30XS.ti_theme_outline .ti_generalKey_art_primary{fill:#000}
+.TI30XS.ti_theme_outline .ti_generalKey_art_second{fill:#666}
+.TI30XS.ti_theme_outline .ti_generalKey{fill:#fff;stroke:#333;stroke-miterlimit:10}
+.TI30XS.ti_theme_outline .ti_numpadKey_art_primary{fill:#000}
+.TI30XS.ti_theme_outline .ti_numpadKey_art_second{fill:#666}
+.TI30XS.ti_theme_outline .ti_numpadKey{fill:#fff;stroke:#333;stroke-miterlimit:10}
+.TI30XS.ti_theme_outline .ti_arrowKey_art_primary{fill:#000}
+.TI30XS.ti_theme_outline .ti_arrowKey_art_second{fill:#666}
+.TI30XS.ti_theme_outline .ti_arrowKey{fill:#fff;stroke:#333;stroke-miterlimit:10}
+.TI30XS.ti_theme_outline .ti_fourFunctionKey_art_primary{fill:#000}
+.TI30XS.ti_theme_outline .ti_fourFunctionKey_art_second{fill:#666}
+.TI30XS.ti_theme_outline .ti_fourFunctionKey{fill:#fff;stroke:#333;stroke-miterlimit:10}
+.TI30XS.ti_theme_outline .ti_key_background_padding{opacity:0;fill:#434e54}
+.TI30XS.ti_theme_outline .ti_calc_case{fill:#fff;stroke:#000;stroke-width:2;stroke-miterlimit:10}
+.TI30XS .ti_highlight_keys .ti_secondKey,.TI30XS .ti_highlight_keys .ti_alphaKey,.TI30XS .ti_highlight_keys .ti_generalKey,.TI30XS .ti_highlight_keys .ti_numpadKey,.TI30XS .ti_highlight_keys .ti_arrowKey,.TI30XS .ti_highlight_keys .ti_fourFunctionKey{fill:#b82e2e}
+.TI30XS .ti_highlight_keys .ti_secondKey_art_primary,.TI30XS .ti_highlight_keys .ti_alphaKey_art_primary,.TI30XS .ti_highlight_keys .ti_alphaKey_art_second,.TI30XS .ti_highlight_keys .ti_generalKey_art_primary,.TI30XS .ti_highlight_keys .ti_generalKey_art_second,.TI30XS .ti_highlight_keys .ti_generalKey_art_alpha,.TI30XS .ti_highlight_keys .ti_numpadKey_art_primary,.TI30XS .ti_highlight_keys .ti_numpadKey_art_second,.TI30XS .ti_highlight_keys .ti_numpadKey_art_alpha,.TI30XS .ti_highlight_keys .ti_arrowKey_art_primary,.TI30XS .ti_highlight_keys .ti_arrowKey_art_second,.TI30XS .ti_highlight_keys .ti_fourFunctionKey_art_primary,.TI30XS .ti_highlight_keys .ti_fourFunctionKey_art_second,.TI30XS .ti_highlight_keys .ti_fourFunctionKey_art_alpha{fill:#fff}
+.TI30XS .ti_disabled_keys .ti_secondKey,.TI30XS .ti_disabled_keys .ti_alphaKey,.TI30XS .ti_disabled_keys .ti_generalKey,.TI30XS .ti_disabled_keys .ti_numpadKey,.TI30XS .ti_disabled_keys .ti_arrowKey,.TI30XS .ti_disabled_keys .ti_fourFunctionKey{opacity:.5}
+.TI30XS .ti_disabled_keys .ti_secondKey_art_primary,.TI30XS .ti_disabled_keys .ti_alphaKey_art_primary,.TI30XS .ti_disabled_keys .ti_alphaKey_art_second,.TI30XS .ti_disabled_keys .ti_generalKey_art_primary,.TI30XS .ti_disabled_keys .ti_generalKey_art_second,.TI30XS .ti_disabled_keys .ti_generalKey_art_alpha,.TI30XS .ti_disabled_keys .ti_numpadKey_art_primary,.TI30XS .ti_disabled_keys .ti_numpadKey_art_second,.TI30XS .ti_disabled_keys .ti_numpadKey_art_alpha,.TI30XS .ti_disabled_keys .ti_arrowKey_art_primary,.TI30XS .ti_disabled_keys .ti_arrowKey_art_second,.TI30XS .ti_disabled_keys .ti_fourFunctionKey_art_primary,.TI30XS .ti_disabled_keys .ti_fourFunctionKey_art_second,.TI30XS .ti_disabled_keys .ti_fourFunctionKey_art_alpha{opacity:.25}
+.TI30XS .ti_focused_keys .ti_secondKey,.TI30XS .ti_focused_keys .ti_alphaKey,.TI30XS .ti_focused_keys .ti_generalKey,.TI30XS .ti_focused_keys .ti_numpadKey,.TI30XS .ti_focused_keys .ti_arrowKey,.TI30XS .ti_focused_keys .ti_fourFunctionKey{stroke:#ff1229;stroke-width:2px}
+.TI30XS .ti_focused_keys,.TI30XS [id^=TI30XS_KEY_]{outline:0}
+.TI30XS.ti_layout_toggle_TI30XS .ti_secondKey_art_primary,.TI30XS.ti_layout_toggle_TI30XS .ti_secondKey,.TI30XS.ti_layout_toggle_TI30XS .ti_alphaKey_art_primary,.TI30XS.ti_layout_toggle_TI30XS .ti_alphaKey_art_second,.TI30XS.ti_layout_toggle_TI30XS .ti_alphaKey,.TI30XS.ti_layout_toggle_TI30XS .ti_generalKey_art_primary,.TI30XS.ti_layout_toggle_TI30XS .ti_generalKey_art_second,.TI30XS.ti_layout_toggle_TI30XS .ti_generalKey_art_alpha,.TI30XS.ti_layout_toggle_TI30XS .ti_generalKey,.TI30XS.ti_layout_toggle_TI30XS .ti_numpadKey_art_primary,.TI30XS.ti_layout_toggle_TI30XS .ti_numpadKey_art_second,.TI30XS.ti_layout_toggle_TI30XS .ti_numpadKey_art_alpha,.TI30XS.ti_layout_toggle_TI30XS .ti_numpadKey,.TI30XS.ti_layout_toggle_TI30XS .ti_arrowKey,.TI30XS.ti_layout_toggle_TI30XS .ti_arrowKey_art_primary,.TI30XS.ti_layout_toggle_TI30XS .ti_arrowKey_art_second,.TI30XS.ti_layout_toggle_TI30XS .ti_fourFunctionKey_art_primary,.TI30XS.ti_layout_toggle_TI30XS .ti_fourFunctionKey_art_second,.TI30XS.ti_layout_toggle_TI30XS .ti_fourFunctionKey_art_alpha,.TI30XS.ti_layout_toggle_TI30XS .ti_fourFunctionKey,.TI30XS.ti_layout_toggle_TI30XS .ti_key_background_padding{display:none}
+.TI30XS.ti_layout_toggle_TI30XS .ti_calc_case{display:none}
+div.calculatorDiv.ti_layout_toggle_TI30XS{background-color:#434e54;border-radius:.5em}
+div.calculatorDiv.ti_layout_toggle_TI30XS.ti_theme_light,div.calculatorDiv.ti_layout_toggle_TI30XS.ti_theme_outline{background-color:#fff;border:solid .1em #000}
+.ti_ec_icon_toggle_keypad{height:3em;width:3em;position:absolute;bottom:-3em;left:calc(50% - 1.5em - 1px);transform:translateX(-50%);cursor:pointer;border:0;background-color:#e2e2e2;text-align:center;padding:0}
+div.calculatorDiv .ti_ec_icon_toggle_keypad svg{width:2.5em;height:2.5em;position:relative}
+.ti_ec_icon_toggle_keypad:active svg path{fill:#9b9b9b;stroke:none}
+.ti_ec_hide_keypad_icon{display:inline-block}
+.ti_layout_toggle_TI30XS .ti_ec_hide_keypad_icon{display:none}
+.ti_ec_show_keypad_icon{display:none}
+.ti_layout_toggle_TI30XS .ti_ec_show_keypad_icon{display:inline-block}
+.ti_ec_reset_button{height:3em;width:5.5em;color:#666;text-align:right;position:absolute;bottom:-3em;right:calc(50% - 3em - 1px);transform:translateX(50%);cursor:pointer;border:0;background:#e2e2e2;display:inline-block}
+.ti_ec_reset_button span{font-size:.9em}
+.ti_ec_reset_button:active{color:#9b9b9b}
+.ti_ec_reset_button:active svg.ti_ec_reset_icon *{fill:#9b9b9b}
+.ti_ec_reset_button.confirm{color:#555;text-align:center;background:#f08080}
+.ti_ec_reset_button.confirm:active{color:#fff}
+.ti_ec_reset_button.confirm svg.ti_ec_reset_icon{display:none}
+.ti_ec_reset_button svg.ti_ec_reset_icon{width:2.5em;height:2.5em;top:50%;left:.25em;transform:translateY(-50%)}
+.ti_ec_reset_button.ti_ec_ui_show{display:inline-block}
+.ti_ec_reset_button.ti_ec_ui_hide{display:none}
+svg.TI84CE{user-select:none}
+.TI84CE path,.TI84CE g,.TI84CE rect,.TI84CE polygon{transition:opacity .25s ease-out .15s,transform .25s ease-out 0s}
+div.calculatorDiv:focus{outline:solid 2px #ff1229}
+div.displayDiv:focus{outline:solid 2px #ff1229}
+.ti_ec_aria_live_display{position:absolute;top:.5em;left:1em;width:1px;height:1px;overflow:hidden}
+.TI84CE .ti_fourFunctionKey,.TI84CE .ti_generalKey,.TI84CE .ti_alphaKey,.TI84CE .ti_secondKey,.TI84CE .ti_numpadKey{transform-origin:50% 50%}
+.TI84CE .ti_logo{fill:#a6a8ac}
+.TI84CE .ti_calc_logo{fill:#f2f2f2}
+.TI84CE .ti_lcd_background{fill:#fff}
+.TI84CE .ti_secondKey_art_primary{fill:#fff}
+.TI84CE .ti_secondKey{fill:#1d76bb;stroke:#1d76bb}
+.TI84CE .ti_alphaKey_art_primary{fill:#000}
+.TI84CE .ti_alphaKey_art_second{fill:#004470}
+.TI84CE .ti_alphaKey{fill:#6fbf4a;stroke:#6fbf4a}
+.TI84CE .ti_generalKey_art_primary{fill:#fff}
+.TI84CE .ti_generalKey_art_second{fill:#71b0dc}
+.TI84CE .ti_generalKey_art_alpha{fill:#6abd37}
+.TI84CE .ti_generalKey{fill:#000;stroke:#ccc;stroke-miterlimit:10}
+.TI84CE .ti_numpadKey_art_second{fill:#0077ce}
+.TI84CE .ti_numpadKey_art_alpha{fill:#3e8400}
+.TI84CE .ti_numpadKey{fill:#fff;stroke:#fff}
+.TI84CE .ti_arrowKey_art_primary{fill:#000}
+.TI84CE .ti_arrowKey_art_second{fill:#005696}
+.TI84CE .ti_arrowKey_art_alpha{fill:#1f6600}
+.TI84CE .ti_arrowKey{fill:#cdcdcd;stroke:#cdcdcd}
+.TI84CE .ti_fourFunctionKey_art_primary{fill:#000}
+.TI84CE .ti_fourFunctionKey_art_second{fill:#005696}
+.TI84CE .ti_fourFunctionKey_art_alpha{fill:#1f6600}
+.TI84CE .ti_fourFunctionKey{fill:#cdcdcd;stroke:#cdcdcd}
+.TI84CE .ti_key_background_padding{opacity:0}
+.TI84CE.ti_theme_light .ti_logo{fill:#000}
+.TI84CE.ti_theme_light .ti_calc_logo{fill:#000}
+.TI84CE.ti_theme_light .ti_lcd_background{fill:#fff}
+.TI84CE.ti_theme_light .ti_secondKey_art_primary{fill:#fff}
+.TI84CE.ti_theme_light .ti_secondKey{fill:#1d76bb}
+.TI84CE.ti_theme_light .ti_alphaKey_art_primary{fill:#000}
+.TI84CE.ti_theme_light .ti_alphaKey_art_second{fill:#004470}
+.TI84CE.ti_theme_light .ti_alphaKey{fill:#6fbf4a}
+.TI84CE.ti_theme_light .ti_generalKey_art_primary{fill:#fff}
+.TI84CE.ti_theme_light .ti_generalKey_art_second{fill:#71b0dc}
+.TI84CE.ti_theme_light .ti_generalKey_art_alpha{fill:#6abd37}
+.TI84CE.ti_theme_light .ti_generalKey{fill:#333;stroke:none}
+.TI84CE.ti_theme_light .ti_numpadKey_art_primary{fill:#000}
+.TI84CE.ti_theme_light .ti_numpadKey_art_second{fill:#0077ce}
+.TI84CE.ti_theme_light .ti_numpadKey_art_alpha{fill:#3e8400}
+.TI84CE.ti_theme_light .ti_numpadKey{fill:#fff;stroke:#000;stroke-miterlimit:10}
+.TI84CE.ti_theme_light .ti_fourFunctionKey_art_primary{fill:#2f292b}
+.TI84CE.ti_theme_light .ti_fourFunctionKey_art_second{fill:#005696}
+.TI84CE.ti_theme_light .ti_fourFunctionKey_art_alpha{fill:#1f6600}
+.TI84CE.ti_theme_light .ti_fourFunctionKey{fill:#cdcdcd;stroke:#666;stroke-miterlimit:10}
+.TI84CE.ti_theme_light .ti_fourFunctionKey_upper{fill:#cdcdcd}
+.TI84CE.ti_theme_light .ti_key_background_padding{opacity:0}
+.TI84CE.ti_theme_light .ti_calc_case{fill:#fff;stroke:#000;stroke-width:2;stroke-miterlimit:10}
+.TI84CE.ti_layout_smallcaps .ti_secondKey,.TI84CE.ti_layout_smallcaps .ti_alphaKey,.TI84CE.ti_layout_smallcaps .ti_generalKey,.TI84CE.ti_layout_smallcaps .ti_numpadKey,.TI84CE.ti_layout_smallcaps .ti_fourFunctionKey{transform:scaleY(0.6) translateY(16px)}
+.TI84CE.ti_layout_smallcaps .ti_arrowKey_art_primary,.TI84CE.ti_layout_smallcaps .ti_arrowKey_art_second,.TI84CE.ti_layout_smallcaps .ti_arrowKey_art_alpha,.TI84CE.ti_layout_smallcaps .ti_arrowKey{transform:translateY(10px)}
+.TI84CE.ti_layout_smallcaps .ti_secondKey_art_primary,.TI84CE.ti_layout_smallcaps .ti_alphaKey_art_primary,.TI84CE.ti_layout_smallcaps .ti_generalKey_art_primary,.TI84CE.ti_layout_smallcaps .ti_numpadKey_art_primary,.TI84CE.ti_layout_smallcaps .ti_fourFunctionKey_art_primary{transform-origin:50% 50%;transform:translateY(3px)}
+.TI84CE.ti_layout_smallcaps .TI84CE_KEY_CARET_PI_H .ti_generalKey_art_primary,.TI84CE.ti_layout_smallcaps .TI84CE_KEY_DIVIDE_E_M .ti_fourFunctionKey_art_primary,.TI84CE.ti_layout_smallcaps .TI84CE_KEY_MULTIPLY_LEFTBRACKET_R .ti_fourFunctionKey_art_primary,.TI84CE.ti_layout_smallcaps .TI84CE_KEY_SUBTRACT_RIGHTBRACKET_W .ti_fourFunctionKey_art_primary,.TI84CE.ti_layout_smallcaps .TI84CE_KEY_ADD_MEM_QUOTE .ti_fourFunctionKey_art_primary,.TI84CE.ti_layout_smallcaps .ti_numpadKey_art_primary{transform:translateY(5px)}
+.TI84CE.ti_layout_smallcaps .ti_alphaKey_art_second,.TI84CE.ti_layout_smallcaps .ti_generalKey_art_second,.TI84CE.ti_layout_smallcaps .ti_numpadKey_art_second,.TI84CE.ti_layout_smallcaps .ti_fourFunctionKey_art_second{transform-origin:50% 50%;transform:scale(1.07) translateY(0px) translateX(-2px)}
+.TI84CE.ti_layout_smallcaps .ti_generalKey_art_alpha,.TI84CE.ti_layout_smallcaps .ti_numpadKey_art_alpha,.TI84CE.ti_layout_smallcaps .ti_fourFunctionKey_art_alpha{transform-origin:50% 50%;transform:scale(1.07) translateY(0px) translateX(2px)}
+.TI84CE.ti_layout_smallcaps .ti_alphaKey_art_second,.TI84CE.ti_layout_smallcaps .ti_generalKey_art_second,.TI84CE.ti_layout_smallcaps .ti_numpadKey_art_second,.TI84CE.ti_layout_smallcaps .ti_fourFunctionKey_art_second{fill:#71b0dc}
+.TI84CE.ti_layout_smallcaps .ti_generalKey_art_alpha,.TI84CE.ti_layout_smallcaps .ti_numpadKey_art_alpha,.TI84CE.ti_layout_smallcaps .ti_fourFunctionKey_art_alpha{fill:#6abd37}
+.TI84CE.ti_layout_smallcaps.ti_theme_light .ti_alphaKey_art_second,.TI84CE.ti_layout_smallcaps.ti_theme_light .ti_generalKey_art_second,.TI84CE.ti_layout_smallcaps.ti_theme_light .ti_numpadKey_art_second,.TI84CE.ti_layout_smallcaps.ti_theme_light .ti_fourFunctionKey_art_second{fill:#0077ce}
+.TI84CE.ti_layout_smallcaps.ti_theme_light .ti_generalKey_art_alpha,.TI84CE.ti_layout_smallcaps.ti_theme_light .ti_numpadKey_art_alpha,.TI84CE.ti_layout_smallcaps.ti_theme_light .ti_fourFunctionKey_art_alpha{fill:#3e8400}
+.TI84CE.ti_layout_keypadonly path,.TI84CE.ti_layout_keypadonly g,.TI84CE.ti_layout_keypadonly rect,.TI84CE.ti_layout_keypadonly polygon{transition:opacity .25s ease-out 0s,transform .25s ease-out .15s}
+.TI84CE.ti_layout_keypadonly .TI84CE_CALCSCREEN{opacity:0}
+.TI84CE.ti_layout_keypadonly .ti_fourFunctionKey,.TI84CE.ti_layout_keypadonly .ti_generalKey,.TI84CE.ti_layout_keypadonly .ti_alphaKey,.TI84CE.ti_layout_keypadonly .ti_secondKey,.TI84CE.ti_layout_keypadonly .ti_numpadKey{transform:translateY(16px)}
+.TI84CE.ti_layout_keypadonly .ti_arrowKey,.TI84CE.ti_layout_keypadonly .ti_arrowKey_art_primary,.TI84CE.ti_layout_keypadonly .ti_arrowKey_art_second,.TI84CE.ti_layout_keypadonly .ti_arrowKey_art_alpha{transform:translateY(13px)}
+.TI84CE.ti_layout_keypadonly .ti_fourFunctionKey_art_primary,.TI84CE.ti_layout_keypadonly .ti_generalKey_art_primary,.TI84CE.ti_layout_keypadonly .ti_alphaKey_art_primary,.TI84CE.ti_layout_keypadonly .ti_secondKey_art_primary,.TI84CE.ti_layout_keypadonly .ti_numpadKey_art_primary{transform:translateY(10px)}
+.TI84CE.ti_layout_keypadonly .TI84CE_KEY_CARET_PI_H .ti_generalKey_art_primary,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_DIVIDE_E_M .ti_fourFunctionKey_art_primary,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_MULTIPLY_LEFTBRACKET_R .ti_fourFunctionKey_art_primary,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_SUBTRACT_RIGHTBRACKET_W .ti_fourFunctionKey_art_primary,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_ADD_MEM_QUOTE .ti_fourFunctionKey_art_primary,.TI84CE.ti_layout_keypadonly .ti_numpadKey_art_primary{transform:translateY(12px)}
+.TI84CE.ti_layout_keypadonly .ti_alphaKey_art_second,.TI84CE.ti_layout_keypadonly .ti_generalKey_art_second,.TI84CE.ti_layout_keypadonly .ti_fourFunctionKey_art_second,.TI84CE.ti_layout_keypadonly .ti_numpadKey_art_second{transform-origin:50% 50%;transform:scale(1.05) translateY(0px) translateX(-2px)}
+.TI84CE.ti_layout_keypadonly .ti_generalKey_art_alpha,.TI84CE.ti_layout_keypadonly .ti_fourFunctionKey_art_alpha,.TI84CE.ti_layout_keypadonly .ti_numpadKey_art_alpha{transform-origin:50% 50%;transform:scale(1.05) translateY(0px) translateX(2px)}
+.TI84CE.ti_layout_keypadonly .TI84CE_KEY_GRAPH_TABLE_F5,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_TRACE_CALC_F4,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_ZOOM_FORMAT_F3,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_WINDOW_TBLSET_F2,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_YEQUALS_STATPLOT_F1{transform:translate(0, -145px)}
+.TI84CE.ti_layout_keypadonly .TI84CE_KEY_SECOND_NONE_NONE,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_MODE_QUIT_NONE,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_DEL_INS_NONE{transform:translate(0, -135px)}
+.TI84CE.ti_layout_keypadonly .TI84CE_KEY_RIGHTARROW_NONE_NONE,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_DOWNARROW_PAGEDOWN_NONE,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_UPARROW_PAGEUP_NONE,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_LEFTARROW_NONE_NONE{transform:translate(0, -120px)}
+.TI84CE.ti_layout_keypadonly .TI84CE_KEY_ALPHA_ALOCK_NONE,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_XVAR_LINK_NONE,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_STAT_LIST_NONE{transform:translate(0, -120px)}
+.TI84CE.ti_layout_keypadonly .TI84CE_KEY_MATH_TEST_A,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_APPS_ANGLE_B,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_PRGM_DRAW_C,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_VARS_DISTR_NONE,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_CLEAR_NONE_NONE{transform:translate(0, -105px)}
+.TI84CE.ti_layout_keypadonly .TI84CE_KEY_INVERSE_MATRIX_D,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_SIN_ASIN_E,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_COS_ACOS_F,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_TAN_ATAN_G,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_CARET_PI_H{transform:translate(0, -90px)}
+.TI84CE.ti_layout_keypadonly .TI84CE_KEY_SQUARED_SQUAREROOT_I,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_COMMA_EE_J,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_LEFTPAREN_LEFTBRACE_K,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_RIGHTPAREN_RIGHTBRACE_L,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_DIVIDE_E_M{transform:translate(0, -75px)}
+.TI84CE.ti_layout_keypadonly .TI84CE_KEY_LOG_10X_N,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_SEVEN_U_O,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_EIGHT_V_P,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_NINE_W_Q,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_MULTIPLY_LEFTBRACKET_R{transform:translate(0, -60px)}
+.TI84CE.ti_layout_keypadonly .TI84CE_KEY_LN_EX_S,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_FOUR_L4_T,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_FIVE_L5_U,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_SIX_L6_V,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_SUBTRACT_RIGHTBRACKET_W{transform:translate(0, -45px)}
+.TI84CE.ti_layout_keypadonly .TI84CE_KEY_STO_RCL_X,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_ONE_L1_Y,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_TWO_L2_Z,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_THREE_L3_THETA,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_ADD_MEM_QUOTE{transform:translate(0, -30px)}
+.TI84CE.ti_layout_keypadonly .TI84CE_KEY_ON_OFF_NONE,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_ZERO_CATALOG_SPACE,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_DECIMAL_IMAGINEI_COLON,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_NEGATIVE_ANS_QUESTIONMARK,.TI84CE.ti_layout_keypadonly .TI84CE_KEY_ENTER_ENTRY_SOLVE{transform:translate(0, -15px)}
+.TI84CE.ti_layout_keypadonly .ti_alphaKey_art_second,.TI84CE.ti_layout_keypadonly .ti_generalKey_art_second,.TI84CE.ti_layout_keypadonly .ti_numpadKey_art_second,.TI84CE.ti_layout_keypadonly .ti_fourFunctionKey_art_second{fill:#71b0dc}
+.TI84CE.ti_layout_keypadonly .ti_generalKey_art_alpha,.TI84CE.ti_layout_keypadonly .ti_numpadKey_art_alpha,.TI84CE.ti_layout_keypadonly .ti_fourFunctionKey_art_alpha{fill:#6abd37}
+.TI84CE.ti_layout_keypadonly.ti_theme_light .ti_alphaKey_art_second,.TI84CE.ti_layout_keypadonly.ti_theme_light .ti_generalKey_art_second,.TI84CE.ti_layout_keypadonly.ti_theme_light .ti_numpadKey_art_second,.TI84CE.ti_layout_keypadonly.ti_theme_light .ti_fourFunctionKey_art_second{fill:#0077ce}
+.TI84CE.ti_layout_keypadonly.ti_theme_light .ti_generalKey_art_alpha,.TI84CE.ti_layout_keypadonly.ti_theme_light .ti_numpadKey_art_alpha,.TI84CE.ti_layout_keypadonly.ti_theme_light .ti_fourFunctionKey_art_alpha{fill:#3e8400}
+div.displayDiv canvas.ti_theme_light,div.displayDiv canvas.ti_theme_outline{border:1px solid #666;width:calc(100% - 2px);height:calc(100% - 2px)}
+.TI84CE.ti_theme_outline .ti_logo{fill:#666}
+.TI84CE.ti_theme_outline .ti_calc_logo{fill:#000}
+.TI84CE.ti_theme_outline .ti_lcd_background{fill:#fff}
+.TI84CE.ti_theme_outline .ti_secondKey_art_primary{fill:#000}
+.TI84CE.ti_theme_outline .ti_secondKey{fill:#fff;stroke:#666;stroke-miterlimit:10}
+.TI84CE.ti_theme_outline .ti_alphaKey_art_primary{fill:#000}
+.TI84CE.ti_theme_outline .ti_alphaKey_art_second{fill:#666}
+.TI84CE.ti_theme_outline .ti_alphaKey{fill:#fff;stroke:#666;stroke-miterlimit:10}
+.TI84CE.ti_theme_outline .ti_generalKey_art_primary{fill:#000}
+.TI84CE.ti_theme_outline .ti_generalKey_art_second{fill:#666}
+.TI84CE.ti_theme_outline .ti_generalKey_art_alpha{fill:#666}
+.TI84CE.ti_theme_outline .ti_generalKey{fill:#fff;stroke:#666;stroke-miterlimit:10}
+.TI84CE.ti_theme_outline .ti_numpadKey_art_primary{fill:#000}
+.TI84CE.ti_theme_outline .ti_numpadKey_art_second{fill:#666}
+.TI84CE.ti_theme_outline .ti_numpadKey_art_alpha{fill:#666}
+.TI84CE.ti_theme_outline .ti_numpadKey{fill:#fff;stroke:#666;stroke-miterlimit:10}
+.TI84CE.ti_theme_outline .ti_fourFunctionKey_art_primary{fill:#000}
+.TI84CE.ti_theme_outline .ti_fourFunctionKey_art_second{fill:#666}
+.TI84CE.ti_theme_outline .ti_fourFunctionKey_art_alpha{fill:#666}
+.TI84CE.ti_theme_outline .ti_fourFunctionKey{fill:#fff;stroke:#666;stroke-miterlimit:10}
+.TI84CE.ti_theme_outline .ti_arrowKey_art_primary{fill:#000}
+.TI84CE.ti_theme_outline .ti_arrowKey_art_second{fill:#666}
+.TI84CE.ti_theme_outline .ti_arrowKey_art_alpha{fill:#666}
+.TI84CE.ti_theme_outline .ti_arrowKey{fill:#fff;stroke:#666;stroke-miterlimit:10}
+.TI84CE.ti_theme_outline .ti_key_background_padding{opacity:0}
+.TI84CE.ti_theme_outline .ti_calc_case{fill:#fff;stroke:#000;stroke-width:2;stroke-miterlimit:10}
+.TI84CE .ti_highlight_keys .ti_secondKey,.TI84CE .ti_highlight_keys .ti_alphaKey,.TI84CE .ti_highlight_keys .ti_generalKey,.TI84CE .ti_highlight_keys .ti_numpadKey,.TI84CE .ti_highlight_keys .ti_arrowKey,.TI84CE .ti_highlight_keys .ti_fourFunctionKey{fill:#b82e2e}
+.TI84CE .ti_highlight_keys .ti_secondKey_art_primary,.TI84CE .ti_highlight_keys .ti_alphaKey_art_primary,.TI84CE .ti_highlight_keys .ti_alphaKey_art_second,.TI84CE .ti_highlight_keys .ti_generalKey_art_primary,.TI84CE .ti_highlight_keys .ti_generalKey_art_second,.TI84CE .ti_highlight_keys .ti_generalKey_art_alpha,.TI84CE .ti_highlight_keys .ti_numpadKey_art_primary,.TI84CE .ti_highlight_keys .ti_numpadKey_art_second,.TI84CE .ti_highlight_keys .ti_numpadKey_art_alpha,.TI84CE .ti_highlight_keys .ti_arrowKey_art_primary,.TI84CE .ti_highlight_keys .ti_arrowKey_art_second,.TI84CE .ti_highlight_keys .ti_arrowKey_art_alpha,.TI84CE .ti_highlight_keys .ti_fourFunctionKey_art_primary,.TI84CE .ti_highlight_keys .ti_fourFunctionKey_art_second,.TI84CE .ti_highlight_keys .ti_fourFunctionKey_art_alpha{fill:#fff}
+.TI84CE .ti_disabled_keys .ti_secondKey,.TI84CE .ti_disabled_keys .ti_alphaKey,.TI84CE .ti_disabled_keys .ti_generalKey,.TI84CE .ti_disabled_keys .ti_numpadKey,.TI84CE .ti_disabled_keys .ti_arrowKey,.TI84CE .ti_disabled_keys .ti_fourFunctionKey{opacity:.5}
+.TI84CE .ti_disabled_keys .ti_secondKey_art_primary,.TI84CE .ti_disabled_keys .ti_alphaKey_art_primary,.TI84CE .ti_disabled_keys .ti_alphaKey_art_second,.TI84CE .ti_disabled_keys .ti_generalKey_art_primary,.TI84CE .ti_disabled_keys .ti_generalKey_art_second,.TI84CE .ti_disabled_keys .ti_generalKey_art_alpha,.TI84CE .ti_disabled_keys .ti_numpadKey_art_primary,.TI84CE .ti_disabled_keys .ti_numpadKey_art_second,.TI84CE .ti_disabled_keys .ti_numpadKey_art_alpha,.TI84CE .ti_disabled_keys .ti_arrowKey_art_primary,.TI84CE .ti_disabled_keys .ti_arrowKey_art_second,.TI84CE .ti_disabled_keys .ti_arrowKey_art_alpha,.TI84CE .ti_disabled_keys .ti_fourFunctionKey_art_primary,.TI84CE .ti_disabled_keys .ti_fourFunctionKey_art_second,.TI84CE .ti_disabled_keys .ti_fourFunctionKey_art_alpha{opacity:.25}
+.TI84CE .ti_focused_keys .ti_secondKey,.TI84CE .ti_focused_keys .ti_alphaKey,.TI84CE .ti_focused_keys .ti_generalKey,.TI84CE .ti_focused_keys .ti_numpadKey,.TI84CE .ti_focused_keys .ti_arrowKey,.TI84CE .ti_focused_keys .ti_fourFunctionKey{stroke:#ff1229;stroke-width:2px}
+.TI84CE .ti_focused_keys,.TI84CE [id^=TI84CE_KEY_]{outline:0}
+.TI84CE.ti_layout_toggle_TI84CE .ti_secondKey_art_primary,.TI84CE.ti_layout_toggle_TI84CE .ti_secondKey,.TI84CE.ti_layout_toggle_TI84CE .ti_alphaKey_art_primary,.TI84CE.ti_layout_toggle_TI84CE .ti_alphaKey_art_second,.TI84CE.ti_layout_toggle_TI84CE .ti_alphaKey,.TI84CE.ti_layout_toggle_TI84CE .ti_generalKey_art_primary,.TI84CE.ti_layout_toggle_TI84CE .ti_generalKey_art_second,.TI84CE.ti_layout_toggle_TI84CE .ti_generalKey_art_alpha,.TI84CE.ti_layout_toggle_TI84CE .ti_generalKey,.TI84CE.ti_layout_toggle_TI84CE .ti_numpadKey_art_primary,.TI84CE.ti_layout_toggle_TI84CE .ti_numpadKey_art_second,.TI84CE.ti_layout_toggle_TI84CE .ti_numpadKey_art_alpha,.TI84CE.ti_layout_toggle_TI84CE .ti_numpadKey,.TI84CE.ti_layout_toggle_TI84CE .ti_arrowKey,.TI84CE.ti_layout_toggle_TI84CE .ti_arrowKey_art_primary,.TI84CE.ti_layout_toggle_TI84CE .ti_arrowKey_art_second,.TI84CE.ti_layout_toggle_TI84CE .ti_arrowKey_art_alpha,.TI84CE.ti_layout_toggle_TI84CE .ti_fourFunctionKey_art_primary,.TI84CE.ti_layout_toggle_TI84CE .ti_fourFunctionKey_art_second,.TI84CE.ti_layout_toggle_TI84CE .ti_fourFunctionKey_art_alpha,.TI84CE.ti_layout_toggle_TI84CE .ti_fourFunctionKey,.TI84CE.ti_layout_toggle_TI84CE .ti_fourFunctionKey_upper,.TI84CE.ti_layout_toggle_TI84CE .ti_key_background_padding{display:none}
+.TI84CE.ti_layout_toggle_TI84CE .ti_calc_case{display:none}
+div.calculatorDiv.ti_layout_toggle_TI84CE{background-color:#000;border-radius:.5em}
+div.calculatorDiv.ti_layout_toggle_TI84CE.ti_theme_light,div.calculatorDiv.ti_layout_toggle_TI84CE.ti_theme_outline{background-color:#fff;border:solid .1em #000}
+.ti_ec_icon_toggle_keypad{height:3em;width:3em;position:absolute;bottom:-3em;left:calc(50% - 1.5em - 1px);transform:translateX(-50%);cursor:pointer;border:0;background-color:#e2e2e2;text-align:center;padding:0}
+div.calculatorDiv .ti_ec_icon_toggle_keypad svg{width:2.5em;height:2.5em;position:relative}
+.ti_ec_icon_toggle_keypad:active svg path{fill:#9b9b9b;stroke:none}
+.ti_ec_hide_keypad_icon{display:inline-block}
+.ti_layout_toggle_TI84CE .ti_ec_hide_keypad_icon{display:none}
+.ti_ec_show_keypad_icon{display:none}
+.ti_layout_toggle_TI84CE .ti_ec_show_keypad_icon{display:inline-block}
+.ti_ec_reset_button{height:3em;width:5.5em;color:#666;text-align:right;position:absolute;bottom:-3em;right:calc(50% - 3em - 1px);transform:translateX(50%);cursor:pointer;border:0;background:#e2e2e2;display:inline-block}
+.ti_ec_reset_button span{font-size:.9em}
+.ti_ec_reset_button:active{color:#9b9b9b}
+.ti_ec_reset_button:active svg.ti_ec_reset_icon *{fill:#9b9b9b}
+.ti_ec_reset_button.confirm{color:#555;text-align:center;background:#f08080}
+.ti_ec_reset_button.confirm:active{color:#fff}
+.ti_ec_reset_button.confirm svg.ti_ec_reset_icon{display:none}
+.ti_ec_reset_button svg.ti_ec_reset_icon{width:2.5em;height:2.5em;top:50%;left:.25em;transform:translateY(-50%)}
+.ti_ec_reset_button.ti_ec_ui_show{display:inline-block}
+.ti_ec_reset_button.ti_ec_ui_hide{display:none}
+div.calculatorDiv{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-user-select:none;-moz-user-select:-moz-none;-ms-user-select:none;-ms-touch-action:none;-ms-content-zooming:none;-ms-content-zoom-limit-max:100%;-ms-content-zoom-limit-min:100%;-ms-content-zoom-chaining:none;top:0;left:0;position:relative;float:left;z-index:1000}
+div.displayDiv{background-color:rgba(0,0,0,0)}
+div.calculatorDiv div.displayDiv{float:left;position:relative;z-index:20}
+div.displayDiv canvas{position:relative;width:100%;height:100%;z-index:20}
+div.calculatorDiv svg{float:left;position:absolute;left:0;top:0;height:100%;width:100%;z-index:0}
+.calculatorDiv.TI30,.calculatorDiv.TI108,.calculatorDiv.TI84{position:absolute !important;top:32px !important}

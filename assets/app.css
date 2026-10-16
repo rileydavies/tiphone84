@@ -1,0 +1,84 @@
+/* ==========================================================
+   TI-84 Plus CE - Clean App Stylesheet
+   Pure Calculator, Edge-to-Edge Widescreen, Zero Extra Buttons
+   ========================================================== */
+
+:root {
+  --calc-w: 258px;
+  --calc-h: 604px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #000000 !important;
+  color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+  overscroll-behavior: none;
+  touch-action: none;
+}
+
+/* Transform Scaler: Top-Left Anchored for exact pixel positioning */
+#scaler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 258px;
+  height: 604px;
+  transform-origin: 0 0;
+  opacity: 0;
+  will-change: transform;
+  transition: opacity 0.2s ease-out;
+}
+
+/* Calculator Root Divs */
+#calculatorDiv, .calculatorDiv {
+  width: 258px !important;
+  height: 604px !important;
+  position: relative !important;
+  outline: none !important;
+  border: none !important;
+  background: #000 !important;
+}
+
+#calculatorDiv svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* LCD Display Canvas - 100% Crisp, Pixel-Perfect Rendering (No Blur) */
+#display,
+div.displayDiv canvas,
+canvas.display {
+  image-rendering: -webkit-optimize-contrast !important;
+  image-rendering: crisp-edges !important;
+  image-rendering: pixelated !important;
+  -webkit-font-smoothing: antialiased;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Touch & Visual Press Enhancement */
+.TI84CE [id^="TI84CE_KEY_"] {
+  cursor: pointer;
+  transition: filter 0.06s ease;
+}
+
+.TI84CE [id^="TI84CE_KEY_"]:active,
+.TI84CE .ti_highlight_keys {
+  filter: brightness(1.3) drop-shadow(0 0 3px rgba(255, 255, 255, 0.35));
+}

@@ -1,0 +1,12 @@
+# Node modules
+node_modules/
+
+# Local TLS / HTTPS self-signed certificates
+server.key
+server.crt
+
+# Logs & temp files
+*.log
+*.tmp
+.DS_Store
+Thumbs.db

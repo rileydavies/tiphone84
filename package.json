@@ -1,0 +1,19 @@
+{
+  "name": "ti84-ce-offline-pwa",
+  "version": "1.0.0",
+  "description": "TI-84 Plus CE Graphing Calculator Offline PWA",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "ti84",
+    "calculator",
+    "pwa",
+    "offline"
+  ],
+  "dependencies": {
+    "qrcode": "^1.5.4",
+    "untun": "^0.2.2"
+  }
+}
